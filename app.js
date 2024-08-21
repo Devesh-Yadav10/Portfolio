@@ -131,8 +131,41 @@ function rightappearelement(){
         }
     }
 }
+let isSidebarOpen = false;
+
+function loadsidebar() {
+    const sidebar = document.querySelector('.sidebar1');
+    if (!isSidebarOpen) {
+        sidebar.animate([
+            { transform: 'translateX(-130%)' },
+            { transform: 'translateX(0%)' }
+        ], {
+            duration: 400,
+            iterations: 1,
+            fill: "forwards",
+        });
+        isSidebarOpen = true;
+    }
+}
+
+function closesidebar() {
+    const sidebar = document.querySelector('.sidebar1');
+    if (isSidebarOpen) {
+        sidebar.animate([
+            { transform: 'translateX(0%)' },
+            { transform: 'translateX(-150%)' }
+        ], {
+            duration: 400,
+            iterations: 1,
+            fill: "forwards",
+        });
+        isSidebarOpen = false;
+    }
+}
+
+
+
 window.addEventListener('scroll', slideintopage);
 window.addEventListener('DOMContentLoaded',appearimage)
 window.addEventListener('scroll', rightappearelement);
-
 

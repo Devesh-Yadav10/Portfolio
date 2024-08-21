@@ -10,72 +10,110 @@
     
     <nav>
         <img src="images/menu-board_17489643.gif" height="50px">
-        <a class="menu-link" onclick="loadsidebar()" href="">Menu</a>
+        <div class="menu-link" onclick="loadsidebar()" href="">Menu</div>
         <img src="images/coffee-cup_6172528.gif" height="50px">
         <a class="hire-link" href="">Hire me</a>
         
     </nav>
     
-    <div class="middle">
-        <div class="information">
-            <p>Hi, I am Devesh</p>
-            <p>Creative Web designer, B.Tech student, Learning DSA, likes to build websites with modern and unique design.</p>
-        </div>
-        <div class="picture" onload="appearimage()" onmouseover="blurimage()" onmouseout="normalimage()" >
-            <img src="images/myimage.jpg" width="40%" >
-            <div class="overlay-text">Click for More Images!</div>
-        </div>
-    </div>
-    <div class="below-middle" onscroll="slideintopage()">
-        <h1>Projects</h1>
-        <div class="projects" onscroll="appearonpage()">
-            <div class="project">
-                <div class="project-icon"><img src="images/earphone_5533475.png" width="100%"></div>
-                <div class="project-title"><a href="">FindMyVibe</a></div>
-                <div class="project-des">Basically a website to find music from all over the world!</div>
-                <button class="open-buttons"><a href="">Click to visit!</a></button>
-            </div>
-            <div class="project">
-                <div class="project-icon"><img src="images/shorts_5499216.png" width="100%"></div>
-                <div class="project-title"><a href="">Nike Copy</a></div>
-                <div class="project-des">A very basic copy of nike, just a showcase of minimal animations.</div>
-                <button class="open-buttons"><a href="">Click to visit!</a></button>
+    <div class="main-content">
+        <div class="sidebar1">
+            <div class="sidebar">
+                <button class="close-button" onclick="closesidebar()">x</button>
+                <a href=""><div class="home" id="home">Home</div></a>
+                <a href=""><div class="reviews">Reviews</div></a>
+                <a href="#contacts"><div class="contacts-sidebar">Contacts</div></a>
+                <a href=""><div class="Login">Login</div></a>
             </div>
         </div>
-    </div>
-    <div class="random-text">
-        <div class="text-projects"><h2>That's it!</h2></div>
-        <div>More projects are on the way so make sure to hold on.</div>
-    </div>
-    <div class="about" onscroll="rightAppearelement()">
-        <div class="about-heading">About me</div>
-        <div class="about-main">
-            <p>I'm currently a under-grad pursuing B.Tech with Computer Science as my branch. Previously I've done python in school which makes me have a better grip of coding. Also I like to play games with friends.</p>
-            <p>Hoping to help you in any possible way so feel free to contact me at my given contacts.</p>
+        <div class="middle">
+            <div class="information">
+                <p>Hi, I am Devesh</p>
+                <p>Creative Web designer, B.Tech student, Learning DSA, likes to build websites with modern and unique design.</p>
+            </div>
+            <div class="picture" onload="appearimage()" onmouseover="blurimage()" onmouseout="normalimage()" >
+                <img src="images/myimage.jpg" width="40%" >
+                <div class="overlay-text">Click for More Images!</div>
+            </div>
         </div>
-    </div>
-    <div class="contact-box">
-        <div class="about-heading">Contacts</div>
-        <div class="contacts">
+        <div class="below-middle" onscroll="slideintopage()">
+            <h1>Projects</h1>
+            <div class="projects" onscroll="appearonpage()">
+                <div class="project">
+                    <div class="project-icon"><img src="images/earphone_5533475.png" width="100%"></div>
+                    <div class="project-title"><a href="https://devesh-yadav10.github.io/Landing_page/" target="_blank">FindMyVibe</a></div>
+                    <div class="project-des">Basically a website to find music from all over the world!</div>
+                    <button class="open-buttons"><a href="https://devesh-yadav10.github.io/Landing_page/" target="_blank">Click to visit!</a></button>
+                </div>
+                <div class="project">
+                    <div class="project-icon"><img src="images/shorts_5499216.png" width="100%"></div>
+                    <div class="project-title"><a href="https://devesh-yadav10.github.io/practice_project2/" target="_blank">Nike Copy</a></div>
+                    <div class="project-des">A very basic copy of nike, just a showcase of minimal animations.</div>
+                    <button class="open-buttons"><a href="https://devesh-yadav10.github.io/practice_project2/" target="_blank">Click to visit!</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="random-text">
+            <div class="text-projects"><h2>That's it!</h2></div>
+            <div>More projects are on the way so make sure to hold on.</div>
+        </div>
+        <div class="about" onscroll="rightAppearelement()">
+            <div class="about-heading">About me</div>
+            <div class="about-main">
+                <p>I'm currently a under-grad pursuing B.Tech with Computer Science as my branch. Previously I've done python in school which makes me have a better grip of coding. Also I like to play games with friends.</p>
+                <p>Hoping to help you in any possible way so feel free to contact me at my given contacts.</p>
+            </div>
+        </div>
+        <div class="review-section">
+            <h2>Leave a Review</h2>
+            <form id="review-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
         
-            <div class="contacts">
-                <a href="">
-                    <img id="linkedin" onmouseover="changeImageColor('linkedin', '#0077b5')" onmouseout="resetImageColor('linkedin')" src="images/linkedin_3488326.png" width="50px">
-                </a>
-                <a href="">
-                    <img id="instagram" onmouseover="changeImageColor('instagram', '#e1306c')" onmouseout="resetImageColor('instagram')" src="images/instagram_1077042.png" width="50px">
-                </a>
-                <a href="">
-                    <img id="email" onmouseover="changeImageColor('email', 'rgb(255, 230, 0)')" onmouseout="resetImageColor('email')" src="images/email_8952677.png" width="50px">
-                </a>
-                <a href="">
-                    <img id="github" onmouseover="changeImageColor('github', '#333')" onmouseout="resetImageColor('github')" src="images/github_1051377.png" width="50px">
-                </a>
-                <a href="">
-                    <img id="logo" onmouseover="changeImageColor('logo', '#738adb')" onmouseout="resetImageColor('logo')" src="images/logo_11423407.png" width="50px">
-                </a>
-            </div>
+                <label for="rating">Rating:</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5" title="5 stars">★</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" title="4 stars">★</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" title="3 stars">★</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" title="2 stars">★</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" title="1 star">★</label>
+                </div>
         
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+        
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+        
+        <div class="contact-box" id="contacts">
+            <div class="about-heading">Contacts</div>
+                <div class="contacts">
+            
+                
+                    <a href="https://www.linkedin.com/in/devesh-yadav-a51b82290/" target="_blank">
+                        <img id="linkedin" onmouseover="changeImageColor('linkedin', '#0077b5')" onmouseout="resetImageColor('linkedin')" src="images/linkedin_3488326.png" width="50px">
+                    </a>
+                    <a href="https://www.instagram.com/dvsh_yadav/" target="_blank">
+                        <img id="instagram" onmouseover="changeImageColor('instagram', '#e1306c')" onmouseout="resetImageColor('instagram')" src="images/instagram_1077042.png" width="50px">
+                    </a>
+                    <a href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcSGLPkQxShWDkjLnSwQVbKtkLvcnTWJxbJXlCxfsNrgWXGpVJdpKkNMbSsgnpzLZSqzJBQzj" target="_blank">
+                        <img id="email" onmouseover="changeImageColor('email', 'rgb(255, 230, 0)')" onmouseout="resetImageColor('email')" src="images/email_8952677.png" width="50px">
+                    </a>
+                    <a href="https://github.com/Devesh-Yadav10" target="_blank">
+                        <img id="github" onmouseover="changeImageColor('github', '#333')" onmouseout="resetImageColor('github')" src="images/github_1051377.png" width="50px">
+                    </a>
+                    <a href="https://discord.gg/BaZ2BWRX" target="_blank">
+                        <img id="logo" onmouseover="changeImageColor('logo', '#738adb')" onmouseout="resetImageColor('logo')" src="images/logo_11423407.png" width="50px">
+                    </a>
+                
+            
+                </div>
         </div>
     </div>
     <div class="bottom">
